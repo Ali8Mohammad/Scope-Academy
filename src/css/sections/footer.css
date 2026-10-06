@@ -1,0 +1,116 @@
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  padding-block: 96px 32px;
+}
+
+.site-footer__curtain {
+  position: absolute;
+  inset-inline: 10%;
+  top: 0;
+  height: 48px;
+  background: linear-gradient(to bottom, rgba(80, 80, 80, 0.35), transparent);
+  clip-path: polygon(8% 0, 92% 0, 100% 100%, 0 100%);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.site-footer__inner {
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.site-footer__brand {
+  width: min(100%, 640px);
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.site-footer__icon {
+  width: var(--footer-icon-size);
+  height: var(--footer-icon-size);
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  color: var(--color-white);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.site-footer__brand h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-white);
+}
+
+.site-footer__brand p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.site-footer__social {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.site-footer__social a {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.site-footer__social a:hover {
+  transform: translateY(-2px);
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.site-footer__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+}
+
+.site-footer__meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-footer__legal {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+}
+
+.site-footer__legal span {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.site-footer__copy {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  width: min(100%, 920px);
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 12px;
+}

@@ -1,0 +1,4 @@
+.card { overflow:hidden; border-radius:var(--radius-md); background:var(--color-bg); }
+.card__body { padding:16px; }
+.card__title { margin-bottom:8px; font-size:18px; font-weight:400; line-height:1.65; }
+.card__meta { margin-bottom:12px; font-size:12px; line-height:1.4; color:var(--color-text-muted); }

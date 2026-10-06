@@ -1,0 +1,12 @@
+.about,
+.trainers,
+.contact,
+.specialties,
+.partners,
+.faq {
+  background: var(--color-bg);
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 10px;
+}

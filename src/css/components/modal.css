@@ -1,0 +1,156 @@
+.trainer-modal {
+  width: min(94vw, 980px);
+  padding: 0;
+  border: 1px solid rgba(255, 102, 0, 0.35);
+  border-radius: 18px;
+  background: #1b1b1b;
+  color: #fff;
+}
+
+.trainer-modal::backdrop {
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(6px);
+}
+
+.trainer-modal__inner {
+  position: relative;
+  padding: 28px;
+}
+
+.trainer-modal__close {
+  position: absolute;
+  top: 12px;
+  inset-inline-end: 12px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000;
+  font-size: 24px;
+}
+
+.trainer-modal__layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.trainer-modal__media {
+  overflow: hidden;
+  border-radius: 14px;
+  min-height: 360px;
+}
+
+.trainer-modal__media img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+.trainer-modal__info {
+  display: grid;
+  gap: 12px;
+  text-align: right;
+}
+
+.trainer-modal__badge {
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.trainer-modal__name {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.trainer-modal__title {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 15px;
+}
+
+.trainer-modal__bio {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.trainer-modal__info h4 {
+  margin-top: 8px;
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+.trainer-modal__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.trainer-modal__skills li {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 102, 0, 0.7);
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.trainer-modal__quals {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.trainer-modal__quals li {
+  display: grid;
+  gap: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+}
+
+.trainer-modal__quals strong {
+  color: #fff;
+}
+
+.trainer-modal__quals em {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.trainer-modal__social {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.trainer-modal__social a {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+}
+
+.trainer-modal__back {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .trainer-modal__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .trainer-modal__quals {
+    grid-template-columns: 1fr;
+  }
+}
